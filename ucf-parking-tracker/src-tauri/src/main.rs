@@ -28,7 +28,7 @@ fn run_scraper() {
     let project_root = env::current_dir().expect("Failed to get current directory");
 
     // Build path to scrape.py under src-tauri/endpoint/
-    let script_path = project_root.join("src-tauri").join("endpoint").join("scrape.py");
+    let script_path = project_root.join("endpoint").join("scrape.py");
 
     println!("Running scraper at: {}", script_path.display());
 
